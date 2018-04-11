@@ -1,23 +1,24 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
-# Samples the dataset according to the weights distribution of 3 Gaussian distribution
-def GMsample(n,p):
+# Samples a dataset according to the weights distribution of k Gaussian distribution
+def GMsample(n,p,k=3):
     """
-    n=500
-    p=[0.2,0.5,0.3]
-    Samples the dataset according to the weights distribution of 3 Gaussian distribution
+    Samples the dataset according to the weights distribution p of k Gaussian distributions
+    n: the size of dataset
+    p: the weighted distibution of Gaussian distributions
+    k: the number of Gaussian distributions
     :return: Sampled data X
     """
-    # choose one of 3 Gaussian distribution
+    # choose one of k=3 Gaussian distribution
     distr_choice = np.random.choice(np.arange(3), size=n, p=p, replace=True)
     unique, counts = np.unique(distr_choice, return_counts=True)
     ##dict(zip(unique, counts))
 
-    # sample from 3 Gaussian distribution
+    # sample from k=3 Gaussian distribution
     g0 = np.random.multivariate_normal([0, 0], [[1, 0], [0, 1]], counts[0])
     g1 = np.random.multivariate_normal([3, 0], [[1, 0], [0, 1]], counts[1])
     g2 = np.random.multivariate_normal([0, 3], [[1, 0], [0, 1]], counts[2])
+    
     # generate a union data
     x=[]
     for i in range(n):
