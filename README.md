@@ -1,5 +1,5 @@
 # Machine-Learning
-Codes in Machine Learning, including classical ML algorithms, reinforcement learning and deep learning algorithms.
+Codes in basic algorithm of  Machine Learning, including the ridge regression, the naive Bayes classifier, the k- NN algorithm and logistic regression algorithm, broosting and so on.
 
 ## hw1_ridge_regression.m
 I implement ridge regression to predict with ananlysis the effect of hyperparameter number and the effect of a pth-order polynomial.
