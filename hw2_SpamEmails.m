@@ -1,10 +1,9 @@
-%% Problem 2a: NAIVE BAYES CLASSIFIER %%
-
 % Read Data
 x = csvread('C:\Users\joy28\Documents\Spring 2018 Study\ENEL4903ML\hw2-data\X_train.csv');
 y = csvread('C:\Users\joy28\Documents\Spring 2018 Study\ENEL4903ML\hw2-data\y_train.csv');
 [n,d] = size(x);
 
+% ------------------------------------ Problem 2a: NAIVE BAYES CLASSIFIER ------------------------------------
 % Compute Pi
 n1=sum(y(:) ==1); % compute the amount of spam for trian data
 n0=sum(y(:) ==0); % compute the amount of non_spam for trian data
@@ -65,9 +64,8 @@ xlabel('dimension')
 legend('class0','class1')
 
 
-
 %% -------------------------------------------------
-%% Problem 2c : k-NN Algorithm  %%
+% ---------------------------------- Problem 2c : k-NN Algorithm ---------------------------------
 function [ class ] = knn( u,x,y )
 [n,d] = size(x);
 u=repmat(u,n,1);
@@ -104,7 +102,7 @@ xlabel('k')
 
 
 %% -------------------------------------------------
-%% Problem 2d : the steepest ascent algorithm %%
+% ------------------------------------ Problem 2d : the steepest ascent algorithm --------------------------
 x=[ones(4508,1) x];
 w=zeros(1,58);
 for t=1:10000
@@ -133,7 +131,7 @@ xlabel('iteration')
 
 
 %% -------------------------------------------------
-%% Problem 2e : the Newton Method %%
+% --------------------------------------- Problem 2e : the Newton Method ---------------------------------------
 %x=[ones(4508,1) x];
 w=zeros(1,58);
 for t=1:100
