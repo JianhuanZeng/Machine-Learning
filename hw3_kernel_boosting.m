@@ -1,11 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Question 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Question 1: the Gaussian kernel model for regression %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % data loading
 x = csvread('/Users/cengjianhuan/Documents/ML/gaussian_process/X_train.csv');
 y = csvread('/Users/cengjianhuan/Documents/ML/gaussian_process/y_train.csv');
 xt = csvread('/Users/cengjianhuan/Documents/ML/gaussian_process/X_test.csv');
 yt = csvread('/Users/cengjianhuan/Documents/ML/gaussian_process/y_test.csv');
-b=[5,7,9,11,13,15];
-var=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1];
+b=[5,7,9,11,13,15]; % the hyperparameter in Gaussian kernel
+var=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]; %  the hyperparameter for the variance of y vallue.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [ K ] = mkernel( x1,x,b )
@@ -64,7 +64,7 @@ title('question 1.d')
 xlabel('dimension 4')
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Question 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Question 2: Boosting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 x = csvread('/Users/cengjianhuan/Documents/ML/boosting/X_train.csv');
 y = csvread('/Users/cengjianhuan/Documents/ML/boosting/y_train.csv');
