@@ -20,3 +20,6 @@ I implement the Markov Chain to dataset 1 for team ranking
 I implement the NonNegative Matrix Factorizatio for classification for Topic Modeling
 
 ## other small projects
+CollaborativeFiltering.py : user-movie
+GaussianMixtureModelSampling.py : HMM
+KmeansClustering.py
