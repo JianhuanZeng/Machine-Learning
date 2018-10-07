@@ -9,6 +9,7 @@ I implement the naive Bayes classifier derived, as well as the k- NN algorithm a
 
 ## hw3_kernel_boosting.m
 I implement the Gaussian kernel model for regression to dataset 1 '/n'
+
 I implement the Boosting algorithm for classification to dataset 2
 
 ## hw4_Kmeans_MatrixFactorization.py
@@ -21,5 +22,7 @@ I implement the NonNegative Matrix Factorizatio for classification for Topic Mod
 
 ## other small projects
 CollaborativeFiltering.py : user-movie '/n'
+
 GaussianMixtureModelSampling.py : HMM '/n'
+
 KmeansClustering.py
