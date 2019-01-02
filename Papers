@@ -1,0 +1,17 @@
+############################################################
+Bayesian deep learning for CV
+
+
+############################################################
+@ https://en.wikipedia.org/wiki/Gradient_boosting
+Gradient boosting
+
+In many supervised learning problems, given: 
+  - a training set {(x,y)}(an output variable y, a vector of input variables x)
+  - a joint probability P(x,y)
+Goal: an approximation F(x) that minimizes the expected value of some loss function L(y, F(x))
+
+The gradient boosting method assumes a real y and seek an approxiamtion F(x) in the form of weighted sum of function h(x)
+
+  
+  
