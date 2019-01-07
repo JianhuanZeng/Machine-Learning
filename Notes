@@ -1,0 +1,6 @@
+# https://en.wikipedia.org/wiki/Receiver_operating_characteristic
+ROC analysis provides tools to select possibly optimal models and to discard suboptimal ones. 
+ROC analysis of is related in a direct and natural way to cost/benefit analysis of diagnostic decision making.
+
+# 
+
